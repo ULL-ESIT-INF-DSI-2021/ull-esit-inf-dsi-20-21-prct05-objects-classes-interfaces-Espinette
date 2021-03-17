@@ -26,5 +26,28 @@ describe('EJERCICIO-CLASE', () => {
         expect(persona1.getDni()).to.be.equal(79074751);
       });
     });
+    const persona2 = new Persona(`Alberto`, `Rios de la Rosa`, `21-12-2000`, `Hombre`, 79074751);
+    persona2.setNombre('Pablo');
+    persona2.setApellidos('Navarro Mendez');
+    persona2.setFechaNacimiento('04-10-2000');
+    persona2.setGenero('Hombre');
+    persona2.setDni(12345678);
+    describe('Probando los setters, creando una persona nueva a partir de ellos', () => {
+      it('persona2.setNombre(Pablo) haciendo el get debe returns Pablo', () => {
+        expect(persona2.getNombre()).to.be.equal('Pablo');
+      });
+      it('persona2.setNombre(Navarro Mendez) haciendo el get debe returns Navarro Mendez', () => {
+        expect(persona2.getApellidos()).to.be.equal('Navarro Mendez');
+      });
+      it('persona2.setFechaNacimiento(04-10-2000) haciendo el get debe returns 04-10-2000', () => {
+        expect(persona2.getFechaNacimiento()).to.be.equal('04-10-2000');
+      });
+      it('persona2.setGenero(Hombre) haciendo el get debe returns Hombre', () => {
+        expect(persona2.getGenero()).to.be.equal('Hombre');
+      });
+      it('persona2.setDni(12345678) haciendo el get debe returns 12345678', () => {
+        expect(persona2.getDni()).to.be.equal(12345678);
+      });
+    });
   });
 });
