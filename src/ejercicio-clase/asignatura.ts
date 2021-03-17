@@ -7,4 +7,27 @@ export class Asignatura {
     this.profesores = profesores;
     this.estudiantes = estudiantes;
   }
+  public getNombre() {
+    return this.nombre;
+  }
+
+  public setNombre(nombre: string) {
+    this.nombre = nombre;
+  }
+
+  public getProfesores() {
+    return this.profesores;
+  }
+
+  public setProfesores(profesor: Profesor) {
+    this.profesores.push(profesor);
+  }
+
+  public getEstudiantes() {
+    return this.estudiantes;
+  }
+
+  public setEstudiantes(estudiante: Estudiante) {
+    this.estudiantes.push(estudiante);
+  }
 }

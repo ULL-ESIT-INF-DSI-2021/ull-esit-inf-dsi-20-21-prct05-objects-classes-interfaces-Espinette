@@ -16,16 +16,16 @@ describe('EJERCICIO-CLASE', () => {
       it('persona1.getNombre() returns Alberto', () => {
         expect(persona1.getNombre()).to.be.equal('Alberto');
       });
-      it('persona1.getNombre() returns Rios de la Rosa', () => {
+      it('persona1.getApellidos() returns Rios de la Rosa', () => {
         expect(persona1.getApellidos()).to.be.equal('Rios de la Rosa');
       });
-      it('persona1.getNombre() returns 21-12-2000', () => {
+      it('persona1.getFechaNacimiento() returns 21-12-2000', () => {
         expect(persona1.getFechaNacimiento()).to.be.equal('21-12-2000');
       });
-      it('persona1.getNombre() returns Hombre', () => {
+      it('persona1.getGenero() returns Hombre', () => {
         expect(persona1.getGenero()).to.be.equal('Hombre');
       });
-      it('persona1.getNombre() returns 79074751', () => {
+      it('persona1.getDni() returns 79074751', () => {
         expect(persona1.getDni()).to.be.equal(79074751);
       });
     });
@@ -58,6 +58,27 @@ describe('EJERCICIO-CLASE', () => {
     it('Se puede instanciar un objeto, distinto a null', () => {
       expect(persona3).not.to.be.equal(null);
     });
+    describe('Probando los getters', () => {
+      it('persona3.getNombre() returns Alberto', () => {
+        expect(persona3.getNombre()).to.be.equal('Alberto');
+      });
+      it('persona3.getApellidos() returns Rios de la Rosa', () => {
+        expect(persona3.getApellidos()).to.be.equal('Rios de la Rosa');
+      });
+      it('persona3.getFechaNacimiento() returns 21-12-2000', () => {
+        expect(persona3.getFechaNacimiento()).to.be.equal('21-12-2000');
+      });
+      it('persona3.getGenero() returns Hombre', () => {
+        expect(persona3.getGenero()).to.be.equal('Hombre');
+      });
+      it('persona3.getDni() returns 79074751', () => {
+        expect(persona3.getDni()).to.be.equal(79074751);
+      });
+
+      it('persona3.getAlu() returns alu0101235929@ull.edu.es', () => {
+        expect(persona3.getAlu()).to.be.equal('alu0101235929@ull.edu.es');
+      });
+    });
   });
 
   const persona4 = new Profesor(`Pedro`, `Martinez`, `21-12-1980`, `Hombre`, 87654321, 'aluprofesor@ull.edu.es');
@@ -72,5 +93,10 @@ describe('EJERCICIO-CLASE', () => {
     it('Se puede instanciar un objeto, distinto a null', () => {
       expect(asignatura1).not.to.be.equal(null);
     });
+    /* describe('Getters de la clase', () => {
+      it('Se puede instanciar un objeto, distinto a null', () => {
+        expect(asignatura1.getProfesores).to.be.equal(persona4);
+      });
+    });*/
   });
 });

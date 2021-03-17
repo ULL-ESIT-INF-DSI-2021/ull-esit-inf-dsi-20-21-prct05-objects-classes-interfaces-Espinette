@@ -2,7 +2,11 @@
   "entryPoints": [
     "./src/ejercicio-1/combat.ts",
     "./src/ejercicio-1/pokedex.ts",
-    "./src/ejercicio-1/pokemon.ts"
+    "./src/ejercicio-1/pokemon.ts",
+    "./src/ejercicio-clase/persona.ts",
+    "./src/ejercicio-clase/profesor.ts",
+    "./src/ejercicio-clase/estudiante.ts",
+    "./src/ejercicio-clase/asignatura.ts"
   ],
   "out": "./docs"
 }
