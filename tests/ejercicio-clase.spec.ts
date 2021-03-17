@@ -3,6 +3,7 @@ import {expect} from 'chai';
 import {Persona} from '../src/ejercicio-clase/persona';
 import {Estudiante} from '../src/ejercicio-clase/estudiante';
 import {Profesor} from '../src/ejercicio-clase/profesor';
+import {Asignatura} from '../src/ejercicio-clase/asignatura';
 
 
 describe('EJERCICIO-CLASE', () => {
@@ -63,6 +64,13 @@ describe('EJERCICIO-CLASE', () => {
   describe('Prueba de un objeto de la clase profesor', () => {
     it('Se puede instanciar un objeto, distinto a null', () => {
       expect(persona4).not.to.be.equal(null);
+    });
+  });
+
+  const asignatura1 = new Asignatura('DSI', [persona4], [persona3]);
+  describe('Prueba de un objeto de la clase asignatura', () => {
+    it('Se puede instanciar un objeto, distinto a null', () => {
+      expect(asignatura1).not.to.be.equal(null);
     });
   });
 });
