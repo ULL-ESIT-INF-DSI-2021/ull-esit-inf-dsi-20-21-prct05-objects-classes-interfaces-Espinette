@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "start1": "tsc-watch --onSuccess \"node dist/ejercicio-1.js\"",
+    "start2": "tsc-watch --onSuccess \"node dist/ejercicio-2.js\"",
     "doc": "typedoc"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "mocha": "^8.3.2",
     "node": "^15.10.0",
     "ts": "^0.2.2",
+    "ts-node": "^9.1.1",
     "tsc-watch": "^4.2.9",
     "typedoc": "^0.20.32"
   }
