@@ -2,6 +2,7 @@ import 'mocha';
 import {expect} from 'chai';
 import {Persona} from '../src/ejercicio-clase/persona';
 import {Estudiante} from '../src/ejercicio-clase/estudiante';
+import {Profesor} from '../src/ejercicio-clase/profesor';
 
 
 describe('EJERCICIO-CLASE', () => {
@@ -51,10 +52,17 @@ describe('EJERCICIO-CLASE', () => {
       });
     });
   });
-  const persona3 = new Estudiante (`Alberto`, `Rios de la Rosa`, `21-12-2000`, `Hombre`, 79074751, 'alu0101235929@ull.edu.es');
+  const persona3 = new Estudiante(`Alberto`, `Rios de la Rosa`, `21-12-2000`, `Hombre`, 79074751, 'alu0101235929@ull.edu.es');
   describe('Prueba de un objeto de la clase estudiante', () => { 
     it('Se puede instanciar un objeto, distinto a null', () => {
       expect(persona3).not.to.be.equal(null);
+    });
+  });
+
+  const persona4 = new Profesor(`Pedro`, `Martinez`, `21-12-1980`, `Hombre`, 87654321, 'aluprofesor@ull.edu.es');
+  describe('Prueba de un objeto de la clase profesor', () => {
+    it('Se puede instanciar un objeto, distinto a null', () => {
+      expect(persona4).not.to.be.equal(null);
     });
   });
 });
