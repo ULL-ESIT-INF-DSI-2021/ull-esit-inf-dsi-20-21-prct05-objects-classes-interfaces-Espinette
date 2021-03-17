@@ -1,6 +1,6 @@
 import {Movable} from "./movable";
 
-export class Coche implements Movable {
+export class Patinete implements Movable {
   constructor(public nombre: string, public velocidad: number, public ruedas: number, public aforo: number, public color: string) {
     this.nombre = nombre;
     this.velocidad = velocidad;
