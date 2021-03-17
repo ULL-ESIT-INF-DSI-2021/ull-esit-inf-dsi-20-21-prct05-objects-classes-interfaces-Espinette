@@ -1,15 +1,32 @@
 import {Pokemon} from '../ejercicio-1/pokemon';
 
+/**
+ * Clase combat que sirve para realizar un combate entre dos pokemons
+ */
 export class Combat {
+  /**
+   * Constructor de la clase
+   * @param pokemon1 Primer pokemon a luchar
+   * @param pokemon2 Segundo pokemon a luchar
+   */
   constructor(private pokemon1: Pokemon, private pokemon2: Pokemon) {
     this.pokemon1 = pokemon1;
     this.pokemon2 = pokemon2;
   }
 
+  /**
+   * Funcion getCombate
+   * @returns Los pokemons que van a participar en la pelea
+   */
   public getCombate() {
     return (`Los pokemons son ${this.pokemon1.getNombre()} y ${this.pokemon2.getNombre()}`);
   }
 
+  /**
+   * Funcion dañoPokemon()
+   * @param atacante Recibe 0 o 1 en función de quien ataca a quien
+   * @returns El daño realizado en ese ataque
+   */
   public dañoPokemon(atacante: number) {
     let efectividad: number = 0;
     let daño: number = 0;
@@ -60,6 +77,11 @@ export class Combat {
     }
   }
 
+  /**
+   * Funcion start()
+   * Simula la pelea mostrando los contrictantes, quien le toca atacar y la vida restante tras un ataque
+   * @returns El ganador del combate
+   */
   public start() {
     let atacante: number = 0;
 
