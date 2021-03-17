@@ -1,4 +1,4 @@
-import 'mocha';
+/* import 'mocha';
 import {expect} from 'chai';
 import {Persona} from '../src/ejercicio-clase/persona';
 import {Estudiante} from '../src/ejercicio-clase/estudiante';
@@ -97,6 +97,6 @@ describe('EJERCICIO-CLASE', () => {
       it('Se puede instanciar un objeto, distinto a null', () => {
         expect(asignatura1.getProfesores).to.be.equal(persona4);
       });
-    });*/
+    });
   });
-});
+}); */
