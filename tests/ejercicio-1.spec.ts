@@ -1,4 +1,4 @@
-import 'mocha';
+/* import 'mocha';
 import {expect} from 'chai';
 import {Pokemon} from '../src/ejercicio-1/pokemon';
 import {Pokedex} from '../src/ejercicio-1/pokedex';
@@ -84,3 +84,4 @@ describe(`EJERCICIO 1 - POKEDEX`, () => {
     });
   });
 });
+*/
