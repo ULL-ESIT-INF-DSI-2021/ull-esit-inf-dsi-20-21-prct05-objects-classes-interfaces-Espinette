@@ -6,4 +6,24 @@ export class Persona {
     this.genero = genero;
     this.dni = dni;
   }
+
+  public getNombre() {
+    return this.nombre;
+  }
+
+  public getApellidos() {
+    return this.apellidos;
+  }
+
+  public getFechaNacimiento() {
+    return this.fechaNacimiento;
+  }
+
+  public getGenero() {
+    return this.genero;
+  }
+
+  public getDni() {
+    return this.dni;
+  }
 }
