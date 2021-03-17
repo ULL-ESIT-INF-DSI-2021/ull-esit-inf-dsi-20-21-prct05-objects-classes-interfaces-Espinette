@@ -1,6 +1,7 @@
 import 'mocha';
 import {expect} from 'chai';
 import {Persona} from '../src/ejercicio-clase/persona';
+import {Estudiante} from '../src/ejercicio-clase/estudiante';
 
 
 describe('EJERCICIO-CLASE', () => {
@@ -48,6 +49,12 @@ describe('EJERCICIO-CLASE', () => {
       it('persona2.setDni(12345678) haciendo el get debe returns 12345678', () => {
         expect(persona2.getDni()).to.be.equal(12345678);
       });
+    });
+  });
+  const persona3 = new Estudiante (`Alberto`, `Rios de la Rosa`, `21-12-2000`, `Hombre`, 79074751, 'alu0101235929@ull.edu.es');
+  describe('Prueba de un objeto de la clase estudiante', () => { 
+    it('Se puede instanciar un objeto, distinto a null', () => {
+      expect(persona3).not.to.be.equal(null);
     });
   });
 });

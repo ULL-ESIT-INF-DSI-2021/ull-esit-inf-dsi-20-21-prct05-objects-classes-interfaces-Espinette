@@ -1,5 +1,5 @@
 export class Persona {
-  constructor(private nombre: string, private apellidos: string, private fechaNacimiento: string, private genero: string, private dni: number) {
+  constructor(protected nombre: string, protected apellidos: string, protected fechaNacimiento: string, protected genero: string, protected dni: number) {
     this.nombre = nombre;
     this.apellidos = apellidos;
     this.fechaNacimiento = fechaNacimiento;
@@ -47,3 +47,4 @@ export class Persona {
     this.dni = a;
   }
 }
+
