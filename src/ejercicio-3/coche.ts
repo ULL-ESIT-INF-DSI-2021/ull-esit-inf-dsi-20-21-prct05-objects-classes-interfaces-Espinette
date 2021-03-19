@@ -1,11 +1,8 @@
-import {Movable} from "./movable";
+import {Vehiculo} from "./vehiculo";
 
-export class Coche implements Movable {
-  constructor(public nombre: string, public velocidad: number, public ruedas: number, public aforo: number, public color: string) {
-    this.nombre = nombre;
-    this.velocidad = velocidad;
-    this.ruedas = ruedas;
-    this.aforo = aforo;
-    this.color = color;
+export class Coche extends Vehiculo {
+  constructor(public nombre: string, public velocidad: number, public ruedas: number, public aforo: number) {
+    super(nombre, velocidad, ruedas, aforo);
   }
 }
+

@@ -1,10 +1,7 @@
-import {Movable} from "./movable";
+import {Vehiculo} from "./vehiculo";
 
-export class Peaton implements Movable {
+export class Peaton extends Vehiculo {
   constructor(public nombre: string, public velocidad: number, public ruedas: number, public aforo: number) {
-    this.nombre = nombre;
-    this.velocidad = velocidad;
-    this.ruedas = ruedas;
-    this.aforo = aforo;
+    super(nombre, velocidad, ruedas, aforo);
   }
 }

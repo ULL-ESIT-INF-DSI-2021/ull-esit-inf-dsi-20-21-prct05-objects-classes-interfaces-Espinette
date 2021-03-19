@@ -3,5 +3,4 @@ export interface Movable {
   velocidad: number;
   ruedas: number;
   aforo: number;
-  color?: string;
 }

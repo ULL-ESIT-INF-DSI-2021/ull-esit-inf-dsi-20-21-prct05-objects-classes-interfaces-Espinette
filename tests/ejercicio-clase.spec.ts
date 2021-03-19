@@ -93,10 +93,5 @@ describe('EJERCICIO-CLASE', () => {
     it('Se puede instanciar un objeto, distinto a null', () => {
       expect(asignatura1).not.to.be.equal(null);
     });
-    /* describe('Getters de la clase', () => {
-      it('Se puede instanciar un objeto, distinto a null', () => {
-        expect(asignatura1.getProfesores).to.be.equal(persona4);
-      });
-    });
   });
 }); */
