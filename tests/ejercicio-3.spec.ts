@@ -7,16 +7,25 @@ import {Tren} from '../src/ejercicio-3/trenes';
 import {Guagua} from '../src/ejercicio-3/guaguas';
 import {Bicicleta} from '../src/ejercicio-3/bicicletas';
 import {Peaton} from '../src/ejercicio-3/peaton';
+import {Street} from '../src/ejercicio-3/street';
 
 
 describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
   const coche1 = new Coche('MazdaAzul', 40, 4, 5);
+  const coche3 = new Coche('MazdaAzul', 40, 4, 5);
+  const coche4 = new Coche('MazdaAzul', 40, 4, 5);
   const moto1 = new Moto('HurleyBlanca', 25, 2, 2);
   const guagua1 = new Guagua('TitaAmarilla', 33, 8, 55);
   const bici1 = new Bicicleta('BicicVerde', 15, 2, 1);
   const tren1 = new Tren('TrenBala', 65, 30, 155);
   const patinete1 = new Patinete('Patinete', 10, 2, 1);
+  const patinete2 = new Patinete('Patinete', 10, 2, 1);
   const peaton1 = new Peaton('Peaton', 5, 0, 1);
+  const peaton2 = new Peaton('Peaton', 5, 0, 1);
+  const peaton3 = new Peaton('Peaton', 5, 0, 1);
+  const peaton4 = new Peaton('Peaton', 5, 0, 1);
+  const peaton5 = new Peaton('Peaton', 5, 0, 1);
+
 
   describe('Probar llamadas a un objeto de la clase Coche', () => {
     it('Se crea un objeto coche distinto a null', () => {
@@ -80,6 +89,18 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
 
     it('Se crea un objeto patinete distinto a null', () => {
       expect(patinete1).not.to.be.equal(null);
+    });
+  });
+  const calle1 = new Street('Jesus y Maria', 'Santa Cruz', [coche1, guagua1, patinete1, peaton1, tren1, moto1, coche3, coche4, peaton2, peaton3, peaton4, peaton5, patinete2]);
+  describe('Probar llamadas clase Street', () => {
+    it('Obtener nombre de la calle returns Jesus y Maria', () => {
+      expect(calle1.getCalle()).to.be.equal('Jesus y Maria');
+    });
+    it('Obtener localidad de la calle returns Santa Cruz', () => {
+      expect(calle1.getLocalidad()).to.be.equal('Santa Cruz');
+    });
+    it('Contar los vehiculos segun su tipo que hay en una calle', () => {
+      calle1.contVehiculos();
     });
   });
 });
