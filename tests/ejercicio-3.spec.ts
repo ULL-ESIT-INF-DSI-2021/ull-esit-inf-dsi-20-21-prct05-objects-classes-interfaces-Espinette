@@ -11,20 +11,20 @@ import {Street} from '../src/ejercicio-3/street';
 
 
 describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
-  const coche1 = new Coche('MazdaAzul', 40, 4, 5);
-  const coche3 = new Coche('MazdaAzul', 40, 4, 5);
-  const coche4 = new Coche('MazdaAzul', 40, 4, 5);
-  const moto1 = new Moto('HurleyBlanca', 25, 2, 2);
-  const guagua1 = new Guagua('TitaAmarilla', 33, 8, 55);
-  const bici1 = new Bicicleta('BicicVerde', 15, 2, 1);
-  const tren1 = new Tren('TrenBala', 65, 30, 155);
-  const patinete1 = new Patinete('Patinete', 10, 2, 1);
-  const patinete2 = new Patinete('Patinete', 10, 2, 1);
-  const peaton1 = new Peaton('Peaton', 5, 0, 1);
-  const peaton2 = new Peaton('Peaton', 5, 0, 1);
-  const peaton3 = new Peaton('Peaton', 5, 0, 1);
-  const peaton4 = new Peaton('Peaton', 5, 0, 1);
-  const peaton5 = new Peaton('Peaton', 5, 0, 1);
+  const coche1 = new Coche('Coche1', 46, 4, 5);
+  const coche3 = new Coche('Coche2', 40, 4, 5);
+  const coche4 = new Coche('Coche3', 57, 4, 5);
+  const moto1 = new Moto('Moto1', 25, 2, 2);
+  const guagua1 = new Guagua('Guagua1', 33, 8, 55);
+  const bici1 = new Bicicleta('Bici1', 27, 2, 1);
+  const tren1 = new Tren('Tren1', 65, 30, 155);
+  const patinete1 = new Patinete('Patinete1', 10, 2, 1);
+  const patinete2 = new Patinete('Patinete2', 14, 2, 1);
+  const peaton1 = new Peaton('Peaton1', 5, 0, 1);
+  const peaton2 = new Peaton('Peaton2', 6, 0, 1);
+  const peaton3 = new Peaton('Peaton3', 4.5, 0, 1);
+  const peaton4 = new Peaton('Peaton4', 3, 0, 1);
+  const peaton5 = new Peaton('Peaton5', 7, 0, 1);
 
 
   describe('Probar llamadas a un objeto de la clase Coche', () => {
@@ -32,11 +32,11 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
       expect(coche1).not.to.be.equal(null);
     });
     describe('Acceder a un elemento público clase coche', () => {
-      it('coche1.nombre returns MazdaAzul', () => {
-        expect(coche1.nombre).to.be.equal('MazdaAzul');
+      it('coche1.nombre returns Coche1', () => {
+        expect(coche1.nombre).to.be.equal('Coche1');
       });
-      it('coche1.velocidad returns 40', () => {
-        expect(coche1.velocidad).to.be.equal(40);
+      it('coche1.velocidad returns 46', () => {
+        expect(coche1.velocidad).to.be.equal(46);
       });
       it('coche1.ruedas returns 4', () => {
         expect(coche1.ruedas).to.be.equal(4);
@@ -91,7 +91,7 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
       expect(patinete1).not.to.be.equal(null);
     });
   });
-  const calle1 = new Street('Jesus y Maria', 'Santa Cruz', [coche1, guagua1, patinete1, peaton1, tren1, moto1, coche3, coche4, peaton2, peaton3, peaton4, peaton5, patinete2]);
+  const calle1 = new Street('Jesus y Maria', 'Santa Cruz', [coche1, guagua1, patinete1, peaton1, tren1, moto1, coche3, coche4, peaton2, peaton4, peaton5, patinete2]);
   describe('Probar llamadas clase Street', () => {
     it('Obtener nombre de la calle returns Jesus y Maria', () => {
       expect(calle1.getCalle()).to.be.equal('Jesus y Maria');
@@ -101,6 +101,18 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
     });
     it('Contar los vehiculos segun su tipo que hay en una calle', () => {
       calle1.contVehiculos();
+    });
+    it('Añadir peaton3 a la calle se muestra en la tabla de vehiculos.', () => {
+      calle1.addVehiculo(peaton3);
+      calle1.mostrarVehiculos();
+    });
+    it('Eliminar vehiculo de la calle peaton 4 ya no está en la tabla', () => {
+      calle1.removeVehiculo(peaton4);
+      calle1.mostrarVehiculos();
+    });
+    it('Vehiculos de la calle ordenados por velocidad', () => {
+      calle1.velocity();
+      calle1.mostrarVehiculos();
     });
   });
 });

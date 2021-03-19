@@ -36,7 +36,7 @@ export class Street {
 
   public contVehiculos() {
     let contCoche: number = 0;
-    let contMoto: number = 0; 
+    let contMoto: number = 0;
     let contTren: number = 0;
     let contPatinete: number = 0;
     let contPeaton: number = 0;
@@ -74,5 +74,28 @@ export class Street {
     console.log(` Peaton: ${contPeaton}`);
     console.log(` Guagua: ${contGuagua}`);
     console.log(` Bicicleta: ${contBicicleta}`);
+  }
+
+  public addVehiculo(vehiculo: Vehiculo) {
+    this.vehiculos.push(vehiculo);
+  }
+
+  public removeVehiculo(vehiculo: Vehiculo) {
+    const eliminar: number = this.vehiculos.indexOf(vehiculo);
+    this.vehiculos.splice(eliminar, 1);
+  }
+
+  public velocity() {
+    let aux: Vehiculo;
+    let pos: number;
+    for (let i: number = 1; i < this.vehiculos.length; i++) {
+      pos = i;
+      aux = this.vehiculos[i];
+      while ((this.vehiculos[pos].velocidad >= aux.velocidad) && (pos > 0)) {
+        this.vehiculos[pos + 1] = this.vehiculos[pos];
+        pos = pos - 1;
+      }
+      this.vehiculos[pos + 1] = aux;
+    }
   }
 }
