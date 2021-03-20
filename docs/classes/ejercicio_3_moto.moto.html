@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Combat | ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette</title>
+	<title>Moto | ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette</title>
 	<meta name="description" content="Documentation for ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette</a>
 				</li>
 				<li>
-					<a href="../modules/ejercicio_1_combat.html">ejercicio-1/combat</a>
+					<a href="../modules/ejercicio_3_moto.html">ejercicio-3/moto</a>
 				</li>
 				<li>
-					<a href="ejercicio_1_combat.combat.html">Combat</a>
+					<a href="ejercicio_3_moto.moto.html">Moto</a>
 				</li>
 			</ul>
-			<h1>Class Combat</h1>
+			<h1>Class Moto</h1>
 		</div>
 	</div>
 </header>
@@ -71,7 +71,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Clase combat que sirve para realizar un combate entre dos pokemons</p>
+						<p>Clase moto hija de la clase vehiculo</p>
 					</div>
 				</div>
 			</section>
@@ -79,7 +79,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Combat</span>
+						<a href="ejercicio_3_vehiculo.vehiculo.html" class="tsd-signature-type" data-tsd-kind="Class">Vehiculo</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Moto</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -90,15 +95,16 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="ejercicio_1_combat.combat.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="ejercicio_3_moto.moto.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ejercicio_1_combat.combat.html#da_opokemon" class="tsd-kind-icon">daño<wbr>Pokemon</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ejercicio_1_combat.combat.html#getcombate" class="tsd-kind-icon">get<wbr>Combate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ejercicio_1_combat.combat.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="ejercicio_3_moto.moto.html#aforo" class="tsd-kind-icon">aforo</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="ejercicio_3_moto.moto.html#nombre" class="tsd-kind-icon">nombre</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="ejercicio_3_moto.moto.html#ruedas" class="tsd-kind-icon">ruedas</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="ejercicio_3_moto.moto.html#velocidad" class="tsd-kind-icon">velocidad</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,17 +112,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Combat<span class="tsd-signature-symbol">(</span>pokemon1<span class="tsd-signature-symbol">: </span><a href="ejercicio_1_pokemon.pokemon.html" class="tsd-signature-type" data-tsd-kind="Class">Pokemon</a>, pokemon2<span class="tsd-signature-symbol">: </span><a href="ejercicio_1_pokemon.pokemon.html" class="tsd-signature-type" data-tsd-kind="Class">Pokemon</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ejercicio_1_combat.combat.html" class="tsd-signature-type" data-tsd-kind="Class">Combat</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Moto<span class="tsd-signature-symbol">(</span>nombre<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, velocidad<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, ruedas<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, aforo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ejercicio_3_moto.moto.html" class="tsd-signature-type" data-tsd-kind="Class">Moto</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="ejercicio_3_vehiculo.vehiculo.html">Vehiculo</a>.<a href="ejercicio_3_vehiculo.vehiculo.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/0acca61/src/ejercicio-1/combat.ts#L6">ejercicio-1/combat.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/0acca61/src/ejercicio-3/moto.ts#L6">ejercicio-3/moto.ts:6</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -127,103 +134,72 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>pokemon1: <a href="ejercicio_1_pokemon.pokemon.html" class="tsd-signature-type" data-tsd-kind="Class">Pokemon</a></h5>
+									<h5>nombre: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Primer pokemon a luchar</p>
+										<p>Nombre de la moto</p>
 									</div>
 								</li>
 								<li>
-									<h5>pokemon2: <a href="ejercicio_1_pokemon.pokemon.html" class="tsd-signature-type" data-tsd-kind="Class">Pokemon</a></h5>
+									<h5>velocidad: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Segundo pokemon a luchar</p>
+										<p>Velocidad a la que circula</p>
+									</div>
+								</li>
+								<li>
+									<h5>ruedas: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Ruedas con las que circula</p>
+									</div>
+								</li>
+								<li>
+									<h5>aforo: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Aforo permitido
+											Se inician con la llamada super al ser heredados
+										Crear un objeto</p>
+										<pre><code class="language-TypeScript"><span style="color: #0000FF">let</span><span style="color: #000000"> </span><span style="color: #001080">Moto</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #795E26">Moto</span><span style="color: #000000">(</span><span style="color: #001080">nombre</span><span style="color: #000000">, </span><span style="color: #001080">velocidad</span><span style="color: #000000">, </span><span style="color: #001080">ruedas</span><span style="color: #000000">, </span><span style="color: #001080">aforo</span><span style="color: #000000">);</span>
+</code></pre>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="ejercicio_1_combat.combat.html" class="tsd-signature-type" data-tsd-kind="Class">Combat</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="ejercicio_3_moto.moto.html" class="tsd-signature-type" data-tsd-kind="Class">Moto</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="da_opokemon" class="tsd-anchor"></a>
-					<h3>daño<wbr>Pokemon</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">daño<wbr>Pokemon<span class="tsd-signature-symbol">(</span>atacante<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/0acca61/src/ejercicio-1/combat.ts#L30">ejercicio-1/combat.ts:30</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Funcion dañoPokemon()</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>atacante: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Recibe 0 o 1 en función de quien ataca a quien</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>El daño realizado en ese ataque</p>
-						</li>
-					</ul>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="aforo" class="tsd-anchor"></a>
+					<h3>aforo</h3>
+					<div class="tsd-signature tsd-kind-icon">aforo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ejercicio_3_vehiculo.vehiculo.html">Vehiculo</a>.<a href="ejercicio_3_vehiculo.vehiculo.html#aforo">aforo</a></p>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getcombate" class="tsd-anchor"></a>
-					<h3>get<wbr>Combate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Combate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/0acca61/src/ejercicio-1/combat.ts#L21">ejercicio-1/combat.ts:21</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Funcion getCombate</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>Los pokemons que van a participar en la pelea</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="nombre" class="tsd-anchor"></a>
+					<h3>nombre</h3>
+					<div class="tsd-signature tsd-kind-icon">nombre<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ejercicio_3_vehiculo.vehiculo.html">Vehiculo</a>.<a href="ejercicio_3_vehiculo.vehiculo.html#nombre">nombre</a></p>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3>start</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/0acca61/src/ejercicio-1/combat.ts#L85">ejercicio-1/combat.ts:85</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Funcion start()
-									Simula la pelea mostrando los contrictantes, quien le toca atacar y la vida restante tras un ataque</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>El ganador del combate</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="ruedas" class="tsd-anchor"></a>
+					<h3>ruedas</h3>
+					<div class="tsd-signature tsd-kind-icon">ruedas<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ejercicio_3_vehiculo.vehiculo.html">Vehiculo</a>.<a href="ejercicio_3_vehiculo.vehiculo.html#ruedas">ruedas</a></p>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="velocidad" class="tsd-anchor"></a>
+					<h3>velocidad</h3>
+					<div class="tsd-signature tsd-kind-icon">velocidad<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="ejercicio_3_vehiculo.vehiculo.html">Vehiculo</a>.<a href="ejercicio_3_vehiculo.vehiculo.html#velocidad">velocidad</a></p>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -233,7 +209,7 @@
 					<li class=" ">
 						<a href="../modules.html">Modules</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/ejercicio_1_combat.html">ejercicio-<wbr>1/combat</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -251,7 +227,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/ejercicio_3_guaguas.html">ejercicio-<wbr>3/guaguas</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/ejercicio_3_moto.html">ejercicio-<wbr>3/moto</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -291,19 +267,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="ejercicio_1_combat.combat.html" class="tsd-kind-icon">Combat</a>
+						<a href="ejercicio_3_moto.moto.html" class="tsd-kind-icon">Moto</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="ejercicio_1_combat.combat.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="ejercicio_3_moto.moto.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="ejercicio_1_combat.combat.html#da_opokemon" class="tsd-kind-icon">daño<wbr>Pokemon</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="ejercicio_3_moto.moto.html#aforo" class="tsd-kind-icon">aforo</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="ejercicio_1_combat.combat.html#getcombate" class="tsd-kind-icon">get<wbr>Combate</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="ejercicio_3_moto.moto.html#nombre" class="tsd-kind-icon">nombre</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="ejercicio_1_combat.combat.html#start" class="tsd-kind-icon">start</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="ejercicio_3_moto.moto.html#ruedas" class="tsd-kind-icon">ruedas</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="ejercicio_3_moto.moto.html#velocidad" class="tsd-kind-icon">velocidad</a>
 							</li>
 						</ul>
 					</li>
@@ -321,10 +300,12 @@
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
 			</ul>
 		</div>
 	</div>
