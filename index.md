@@ -18,15 +18,20 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
 ### Ejercicio 1 - Pokedex
 
  - ___Carpeta con el código resuelto___ = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/tree/master/src/ejercicio-1)
+ 
+ - ___Fichero con las pruebas___ = [Prubas](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/tests/ejercicio-1.spec.ts)
 
  - ___Explicación de cada clase___
 
     1. ___Clase Pokemon___:
       
-        Esta clase sirve para crear un objeto de tipo pokemon, su constructor recibe el nombre del pokemon, su peso, la altura, el tipo de pokemon y un vector con uns estadisticas básicas, que son su ataque, defensa, velocidad y vida. Además, hemos creado los metodos getters y setters para así poder acceder a los atributos ya que son privados de la clase. Encontrará la clase pulsando [aquí.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-1/pokemon.ts)
+        Esta clase sirve para crear un objeto de tipo pokemon, su constructor recibe el nombre del pokemon, su peso, la altura, el tipo de pokemon y un vector con uns estadisticas básicas, que son su ataque, defensa, velocidad y vida. Además, hemos creado los metodos getters y setters para así poder acceder a los atributos ya que son privados de la clase. Encontrará la clase pulsando [aquí.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-1/pokemon.ts). Pruebas superadas:
+        
+        ![Ejercicio1Funcion](Imagenes/Pokemon pruebas.JPG) 
         
     2. ___Clase Pokedex___:
 
-        Esta clase sirve para introcuir en un objeto pokedex todos los pokemons que queramos tener dentro de esta, por lo que su constructor solo recibre un parametro que es un vector de pokemons, además creamos los metodos get y set para la clase, además de un metodo `findPokemon` que sirve para ver si un pokemon se encuentra dentro de la pokedex y una funcion `mostrarPokedex` que muestra una tabla con los pokemons y sus atributos en el objeto. En este caso la tabla resultante sería:
+        Esta clase sirve para introcuir en un objeto pokedex todos los pokemons que queramos tener dentro de esta, por lo que su constructor solo recibre un parametro que es un vector de pokemons, además creamos los metodos get y set para la clase, además de un metodo `findPokemon` que sirve para ver si un pokemon se encuentra dentro de la pokedex y una funcion `mostrarPokedex` que muestra una tabla con los pokemons y sus atributos en el objeto. Encontrará la clase pulsando [aquí.](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-1/pokedex.ts). Pruebas superadas y tabla mostrada:
         
-        
+         ![Ejercicio1Funcion](Imagenes/Pokedex.JPG) 
+
