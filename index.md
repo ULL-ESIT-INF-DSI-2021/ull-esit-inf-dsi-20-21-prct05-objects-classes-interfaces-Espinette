@@ -49,4 +49,85 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
 
          ![Ejercicio1Funcion](Imagenes/Combat.JPG) 
 
+### Ejercicio 2 - Gestor bibliográfico
 
+ - ___Carpeta con el código resuelto___ = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/tree/master/src/ejercicio-2)
+ 
+ - ___Fichero con las pruebas___ = [Prubas](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/tests/ejercicio-2.spec.ts)
+
+ - ___Explicación de cada clase___
+
+
+### Ejercicio 3 - Medios de transporte
+
+ - ___Carpeta con el código resuelto___ = [Solución](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/tree/master/src/ejercicio-3)
+ 
+ - ___Fichero con las pruebas___ = [Prubas](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/tests/ejercicio-3.spec.ts)
+
+ - ___Explicación de cada clase___
+
+    1. ___Interfaz Movable___
+
+         Es una interfaz que se nos pide crear en el enunciado que debe contener el parámetro velocidad, y los que queramos añadir nosotros, en mi caso decidí introducir la variable nombre, ruedas y aforo. La interfaz se encuentra [aqui](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/movable.ts).
+         
+    2. ___Clase Vehiculo___
+
+         Esta es la clase padre de todos los tipos de vehiculos a la que se le implementará la interfaz movable creada, esta clase contendrá un constructor que recibirá de forma pública las variables mencionadas en la interfaz, a su vez esta tendra muchas clases hijas con los distintos tipos de vehículos. La clase se encuentra [aquí](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/vehiculo.ts)
+         
+         Las clases hijas de vehiculo son:
+         
+         a. [Guagua](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/guaguas.ts).
+         b. [Coche](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/coche.ts).
+         c. [Moto](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/moto.ts).
+         d. [Tren](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/trenes.ts).
+         e. [Peaton](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/peaton.ts).
+         f. [Patinete](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/patinete.ts).
+         g. [Bicicleta](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/bicicletas.ts).
+         
+    3. ___Clase Street___
+
+         Esta clase recibirá como parametros el nombre de la calle, la localidad de esta y un vector de vehiculos que puede contener cualquier tipo de vehiculo. Esto es lo que recibe el constructor, además de realizar los get y set para cada uno, ya que son variables privadas, además de una funcion `mostrarVehiculos` que imprime una tabla con los vehiculos que hay en esa calle. Para esta clase se nos pedía implementar una serie de funciones que son las siguientes:
+         
+         a. Funcion `ContVehiculos()`:
+         
+         Es una función cuyo objetivo es contar los vehiculos segun su tipo en una calle y mostrarlo por pantalla, lo que hacemos es un forEach para recorrer el vector vehiculos y dentro de este tenemos muchos if que filtran segun su tipo, cuando encuentre el tipo que es, el contador que tiene asignado se suma uno. Por último se muestra el tipo de vehiculo y la cantidad que había en la calle.
+         
+         ![Ejercicio1Funcion](Imagenes/contVehiculos.JPG) 
+         
+         b. Funcion `addVehiculos(vehiculo)`:
+         
+         Es una función que lo que hace es recibir un vehiculo y hacemos un push para que meta dicho vehiculo en el vector de vehiculos en esa calle.
+        
+         ![Ejercicio1Funcion](Imagenes/addVehiculo.JPG) 
+         
+         c. Funcion `removeVehiculos(vehiculo)`:
+         
+         Es una función que lo que hace es recibir un vehiculo y dentro creamos una variable eliminar y la igualamos a la posicion en la que se encuentra el vehiculo en el vector y hacemos un .splice(eliminar, 1) para eliminar un indice desde la posicion que queremos quitar.
+        
+         ![Ejercicio1Funcion](Imagenes/removeVehiculo.JPG) 
+      
+         d. Funcion `velocity()`
+         
+         Es una función cuyo objetivo es ordenar los vehiculos de la calle segun su velocidad. Lo que hice fue ordenarlo mediante el método de inserccion que es un bucle for que recorra el array vehiculos, establecemos un variable pos a la i del for - 1, e igualamos un aux al vehiculo actual, lo que hacemos luego es un bucle while que si la velocidad del vehiculo que se encuentra en la posicion pos es mayor que aux y pos es mayor que 0, lo que irá haciendo es que pos apuntará a la siguiente pos del array y devaluaremos en uno la posicion. Ya fuera del bucle while metemos en la pos el aux. Y así se ordenaría los vehiculos segun sus velocidadeds.
+         
+         ![Ejercicio1Funcion](Imagenes/removeVehiculo.JPG) 
+         
+         
+    Las pruebas de esta clase realizadas son:
+    
+      ![Ejercicio1Funcion](Imagenes/Prueb3.JPG)
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
