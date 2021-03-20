@@ -64,6 +64,10 @@ describe(`EJERCICIO 1 - POKEDEX`, () => {
     it('Poke.findPokemon(Seel) returns Seel, se encuentra pokemon en la pokedex', () => {
       expect(Poke.findPokemon(Seel)).to.be.equal(Seel);
     });
+
+    it('Mostrar la pokedex', () => {
+      Poke.mostrarPokedex();
+    });
   });
 
   describe('Probar llamada a un objeto de la clase Combat', () => {

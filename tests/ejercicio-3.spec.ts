@@ -91,7 +91,7 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
       expect(patinete1).not.to.be.equal(null);
     });
   });
-  const calle1 = new Street('Jesus y Maria', 'Santa Cruz', [coche1, guagua1, patinete1, peaton1, tren1, moto1, coche3, coche4, peaton2, peaton4, peaton5, patinete2]);
+  const calle1 = new Street('Jesus y Maria', 'Santa Cruz', [peaton4, coche1, guagua1, patinete1, peaton1, tren1, moto1, coche3, coche4, peaton2, peaton5, patinete2]);
   describe('Probar llamadas clase Street', () => {
     it('Obtener nombre de la calle returns Jesus y Maria', () => {
       expect(calle1.getCalle()).to.be.equal('Jesus y Maria');
@@ -104,11 +104,9 @@ describe('EJERCICIO 3 - MEDIOS DE TRANSPORTE', () => {
     });
     it('Añadir peaton3 a la calle se muestra en la tabla de vehiculos.', () => {
       calle1.addVehiculo(peaton3);
-      calle1.mostrarVehiculos();
     });
     it('Eliminar vehiculo de la calle peaton 4 ya no está en la tabla', () => {
-      calle1.removeVehiculo(peaton4);
-      calle1.mostrarVehiculos();
+      calle1.removeVehiculo(peaton5);
     });
     it('Vehiculos de la calle ordenados por velocidad', () => {
       calle1.velocity();

@@ -45,4 +45,11 @@ export class Pokedex {
     }
     return this.baseDatosPokemon[pos];
   }
+
+  /**
+   * Funcion para mostrar la pokedex
+   */
+  public mostrarPokedex() {
+    console.table(this.baseDatosPokemon, ["nombre", "peso", "altura", "tipo"]);
+  }
 }
