@@ -113,9 +113,9 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
          ![Ejercicio1Funcion](Imagenes/removeVehiculo.JPG) 
          
          
-    Las pruebas de esta clase realizadas son:
+    la clase esta [aqui](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-3/street.ts) y las pruebas de esta clase realizadas son:
     
-      ![Ejercicio1Funcion](Imagenes/Prueb3.JPG)
+      ![Ejercicio1Funcion](Imagenes/Prueba3.JPG)
          
          
          
