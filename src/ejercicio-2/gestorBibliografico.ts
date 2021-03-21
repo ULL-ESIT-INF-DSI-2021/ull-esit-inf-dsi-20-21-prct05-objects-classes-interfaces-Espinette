@@ -1,13 +1,29 @@
 import {Articulo} from './articulo';
 
+/**
+ * Clase para gestionar muchos articulos
+ */
 export class GestorBibliografico {
+  /**
+   * Constructor de la clase
+   * @param articulos Articulos a introducir en el gestor
+   */
   constructor(public articulos: Articulo[]) {
   }
 
+  /**
+   * Funcion que muestra por pantalla en una tabla los articulos
+   */
   public mostrarArticulos() {
     console.table(this.articulos);
   }
 
+  /**
+   * Funcion buscar artiuclos
+   * @param keywords Que se quiere buscar
+   * @param filtrar Campo al que pertenece dicha busqueda
+   * @returns Imprime por pantalla la busqueda formato APA
+   */
   public search(keywords: string[], filtrar: string[]) {
     const numero: number[] = [];
     for (let i: number = 0; i < keywords.length; i++) {
@@ -50,20 +66,11 @@ export class GestorBibliografico {
       result.push(this.articulos[numero[0]]);
       numero.shift();
     }
-    console.table(result, ['titulo', 'autor', 'editorial']);
     const array: string[] = [];
     for (let i: number = 0; i < result.length; i++) {
       array.push(result[i].formatoAPA());
       console.log(array[i]);
     }
     return array;
-  }
-
-  public export(exportSearch: Articulo[]) {
-    const array: string[] = [];
-    for (let i: number = 0; i < exportSearch.length; i++) {
-      array.push(exportSearch[i].formatoAPA());
-      console.log(array[i]);
-    }
   }
 }

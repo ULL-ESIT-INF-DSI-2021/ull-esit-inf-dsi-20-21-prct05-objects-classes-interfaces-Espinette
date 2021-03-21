@@ -56,11 +56,11 @@ describe('EJERCICIO 2 - GESTOR BIBLIOGRAFICO', () => {
     it('Se muestra el contenido del gestor bibliográfico', () => {
       gestor.mostrarArticulos();
     });
-    it('Buscar articulos segun el filtro keyword = Pedri', () => {
+    it('Buscar articulos segun el filtro keyword = Pedri y exportarla en forma apa', () => {
       gestor.search(['Pedri'], ['keywords']);
     });
-    it('Exportar resultados de la busqueda en formato APA', () => {
-      gestor.export([articulo3]);
+    it('Buscar articulos segun el filtro editorial = Marca y exportarla en forma apa', () => {
+      gestor.search(['Marca'], ['editorial']);
     });
   });
 });
