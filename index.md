@@ -71,7 +71,7 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
         
         La funcion es la siguiente:
         
-        ![Ejercicio1Funcion](Imagenes/BuscarArticulo.JPG) 
+        ![Ejercicio1Funcion](Imagenes/BuscarArtiuclo.JPG) 
         
         La clase recibe dos parámetros el primero lo que queremos buscar y lo segundo a que campo pertenece dicha búsqueda. Lo que hacemos son varios for para que recorra tanto el vector keyword, como el vector filtro y la longitud del artículo, dentro de los for unas condiciones if para ver que campo estamos filtrando, y comprobar si en cada articulo se encuentra lo que queríamos buscar y lo añadimos a un array el numero del artículo para así al acabar el for saber que artículos cumplan la condicion y luego lo imprimimos en formato APA.
         
