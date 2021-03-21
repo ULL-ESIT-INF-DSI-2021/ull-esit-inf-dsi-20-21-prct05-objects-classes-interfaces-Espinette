@@ -67,6 +67,18 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
         
     2. ___Clase Gestor Bibliografico___
 
+        Esta clase recibe en el constructor un parametro que es un vector de tipo articulos, pues la funcion de esta clase es gestionar y buscar articulos determinados. Primero tenemos una funcion `mostrarGestor()` que lo que hace es un concole.table para mostrar el vector articulo introducido. Además se nos pide crear una función búsqueda que le introduces unos requisitos y te busca los articulos que cumplan dicha condicion y los devuelve en formato APA.
+        
+        La funcion es la siguiente:
+        
+        ![Ejercicio1Funcion](Imagenes/BuscarArticulo.JPG) 
+        
+        La clase recibe dos parámetros el primero lo que queremos buscar y lo segundo a que campo pertenece dicha búsqueda. Lo que hacemos son varios for para que recorra tanto el vector keyword, como el vector filtro y la longitud del artículo, dentro de los for unas condiciones if para ver que campo estamos filtrando, y comprobar si en cada articulo se encuentra lo que queríamos buscar y lo añadimos a un array el numero del artículo para así al acabar el for saber que artículos cumplan la condicion y luego lo imprimimos en formato APA.
+        
+    Las pruebas realizadas para este ejercicio fueron:
+    
+    ![Ejercicio1Funcion](Imagenes/Prueba2.JPG) 
+
 
 ### Ejercicio 3 - Medios de transporte
 
