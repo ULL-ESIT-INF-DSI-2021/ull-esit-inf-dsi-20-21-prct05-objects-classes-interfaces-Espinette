@@ -1,5 +1,5 @@
 export class Articulo {
-  constructor(public titulo: string, public autor: string[], public email: string[], public keywords: string[], public resumen: string, public fecha: string, public editorial: string, public cita: number) {
+  constructor(private titulo: string, private autor: string[], private email: string[], private keywords: string[], private resumen: string, private fecha: string, private editorial: string, private cita: number) {
     this.titulo = titulo;
     this.autor = autor;
     this.email = email;
@@ -73,18 +73,24 @@ export class Articulo {
   public setCita(cita: number) {
     this.cita = cita;
   }
-  
+
   public formatoAPA(): string {
     let texto: string = '';
-    const autores: string[] = [];
-    for (let i: number = 0; i < this.autor.length; i++) autores[i] = this.autor[i];
-    while (autores.length > 2) texto += autores.shift() + ', ';
-    if (autores.length == 1) {
-      texto += autores.shift() + '. ';
-    } else {
-      texto += autores.shift() + ' y ' + autores.shift() + '. ';
-    }
-    texto += '(' + this.fecha + '). ' + this.titulo + '. ' + this.editorial + '.';
+    let i: number = 0;
+    this.autor.forEach((autor) => {
+      if (i > 0) {
+        if (i = this.autor.length - 1) {
+          texto = texto + ' y ' + autor + '.';
+        } else {
+          texto = texto + ',' + autor + '.';
+        }
+      }
+      if (i == 0) {
+        texto = autor;
+      }
+      i++;
+    });
+    texto += ' (' + this.fecha + '). ' + this.titulo + '. ' + this.editorial + '.';
     return texto;
   }
 }
