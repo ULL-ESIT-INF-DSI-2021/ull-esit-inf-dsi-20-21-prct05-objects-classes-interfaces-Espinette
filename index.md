@@ -57,6 +57,16 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
 
  - ___Explicación de cada clase___
 
+    1. ___Clase articulo___
+
+        Se nos pide crear esta clase para así poder establecer objetos de tipo articulo que contrendrá un constructor con los parámetros indicados en el enunciado de la práctica, ademas crear una funcion para covertir un articulo en formato APA, que sería el siguiente: (Autores. (Fecha). Titulo. Editorial.). La funcion es la siguiente:
+        
+        ![Ejercicio1Funcion](Imagenes/FormatoAPA.JPG) 
+        
+        Lo que hacemos aquí básicamente es muy sencillo, agregamos a una cadena de texto y recorremos lel vector autores en un for each, para agregarlos a la cadena y separar por coma por y o por un punto según toque y ya fuera del for añadimos el resto de filtros requeridos para dicho formato.
+        
+    2. ___Clase Gestor Bibliografico___
+
 
 ### Ejercicio 3 - Medios de transporte
 
