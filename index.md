@@ -63,7 +63,7 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
         
         ![Ejercicio1Funcion](Imagenes/FormatoAPA.JPG) 
         
-        Lo que hacemos aquí básicamente es muy sencillo, agregamos a una cadena de texto y recorremos lel vector autores en un for each, para agregarlos a la cadena y separar por coma por y o por un punto según toque y ya fuera del for añadimos el resto de filtros requeridos para dicho formato.
+        Lo que hacemos aquí básicamente es muy sencillo, agregamos a una cadena de texto y recorremos lel vector autores en un for each, para agregarlos a la cadena y separar por coma por y o por un punto según toque y ya fuera del for añadimos el resto de filtros requeridos para dicho formato. Acceda a la clase pinchando [aquí](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-2/articulo.ts)
         
     2. ___Clase Gestor Bibliografico___
 
@@ -73,7 +73,7 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
         
         ![Ejercicio1Funcion](Imagenes/BuscarArtiuclo.JPG) 
         
-        La clase recibe dos parámetros el primero lo que queremos buscar y lo segundo a que campo pertenece dicha búsqueda. Lo que hacemos son varios for para que recorra tanto el vector keyword, como el vector filtro y la longitud del artículo, dentro de los for unas condiciones if para ver que campo estamos filtrando, y comprobar si en cada articulo se encuentra lo que queríamos buscar y lo añadimos a un array el numero del artículo para así al acabar el for saber que artículos cumplan la condicion y luego lo imprimimos en formato APA.
+        La clase recibe dos parámetros el primero lo que queremos buscar y lo segundo a que campo pertenece dicha búsqueda. Lo que hacemos son varios for para que recorra tanto el vector keyword, como el vector filtro y la longitud del artículo, dentro de los for unas condiciones if para ver que campo estamos filtrando, y comprobar si en cada articulo se encuentra lo que queríamos buscar y lo añadimos a un array el numero del artículo para así al acabar el for saber que artículos cumplan la condicion y luego lo imprimimos en formato APA. Acceda a la clase pinchando [aqui](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct05-objects-classes-interfaces-Espinette/blob/master/src/ejercicio-2/gestorBibliografico.ts)
         
     Las pruebas realizadas para este ejercicio fueron:
     
@@ -139,7 +139,8 @@ Para crear el proyecto primero debemos realizar un git clone, de la estructura d
     
       ![Ejercicio1Funcion](Imagenes/Prueba3.JPG)
          
-         
+
+        
          
          
          
